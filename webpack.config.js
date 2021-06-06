@@ -13,8 +13,9 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'index'
-        })
+            template:  path.resolve(__dirname,'./index.html'),
+            filename: 'index.html'
+          }),
     ],
     module: {
         rules: [
